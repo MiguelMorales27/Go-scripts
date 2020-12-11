@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+    var names [3]string
+    names[0] = "Keith"
+    names[1] = "Kevin"
+    names[2] = "Kayla"
+    names[3] = "Kyle"
+
+    fmt.Println(names)
+}
+
+//marcara error ya que excede el limite de datos a ingresar

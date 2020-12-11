@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Addition:", 1.0+3)
+    fmt.Println("Subtraction:", 27-19.5)
+    fmt.Println("Multiplication:", 9.801*11)
+    fmt.Println("Division:", 20/3.0)
+}

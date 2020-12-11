@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+    var name string
+    var myInt int = 16
+    var val = "yes"
+
+    name = "Keith"
+
+    fmt.Println("myInt is:", myInt)
+    fmt.Println("myInt times two:", myInt*2)
+    fmt.Println("val is:", val)
+    fmt.Println("name is:", name)
+}

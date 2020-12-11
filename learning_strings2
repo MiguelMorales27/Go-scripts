@@ -1,0 +1,9 @@
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println('LA')
+}
+
+//marcara error ya que las comillas simples solo aceptan un solo caracter

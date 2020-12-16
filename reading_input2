@@ -1,0 +1,31 @@
+package main
+
+import (
+        "bufio"
+        "fmt"
+        "io/ioutil"
+        "motd/message"
+        "os"
+        "strings"
+)
+
+func main() {
+        reader := bufio.NewReader(os.Stdin)
+        fmt.Print("Your Greeting: ")
+        phrase,  := reader.ReadString('\n')
+        phrase = strings.TrimSpace(phrase)
+
+        fmt.Print("Your Name: ")
+        name,  := reader.ReadString('\n')
+        name = strings.TrimSpace(name)
+
+        m := message.Greeting(name, phrase)
+        _ = ioutil.WriteFile("/etc/motd", []byte(m), 0644)
+}
+os.Exit:
+
+if err != nil {
+  // do something to handle error
+  fmt.Println("Unable to write /etc/motd")
+  os.Exit(1)
+}
